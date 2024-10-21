@@ -1,4 +1,15 @@
+
+:root{
+    --root-size: 100px;
+    --fg-color:white;
+}
 body{
     background-color: black;
     color: aliceblue;
+    font-size: var(--root-size);
+}
+@media(min-width:600px){
+    :root{
+        --root-size: 50px;
+    }
 }
