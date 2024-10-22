@@ -3,11 +3,29 @@
     --root-size: 100px;
     --fg-color:white;
 }
+
 body{
     background-color: black;
     color: aliceblue;
     font-size: var(--root-size);
 }
+
+h1{
+    font-size: 64pt;
+}
+
+h2{
+    font-size: 32pt;
+}
+
+h3{
+    font-size: 24pt;
+}
+
+h4{
+    font: size 16pt;
+}
+
 @media(min-width:600px){
     :root{
         --root-size: 50px;
