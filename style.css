@@ -11,19 +11,23 @@ body{
 }
 
 h1{
-    font-size: 64pt;
+    font-size: 64px;
+    font-family: Jomolhari;
 }
 
 h2{
-    font-size: 32pt;
+    font-size: 32px;
+    font-family: Jomolhari;
 }
 
 h3{
-    font-size: 24pt;
+    font-size: 18px;
+    font-family: Inter;
 }
 
-h4{
-    font: size 16pt;
+p, blockquote{
+    font-size: 16px;
+    font-family: Inter;
 }
 
 @media(min-width:600px){
