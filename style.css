@@ -38,6 +38,10 @@ article{
     :root{
         --root-size: 50px;
     }
+    body{
+        padding: 20px;
+
+    }
     header{
         background-color: black;
         color: white;
@@ -50,9 +54,16 @@ article{
     }
     article{
         display: flex;
-        border: 2px;
+        /* border: 4px;
+       outline-style: solid;
+        outline-color: linear-gradient(to right, #FF4B3B, #FAE442, #2AA8F2); */
+        margin-top: 20px;
+        border-image: linear-gradient(to right, #FF4B3B 0%,#FAE442 50%, #2AA8F2 100%) 1;
+        border-radius: 5px; /* this doesn't work */
+        border-width: 4px;
         border-style: solid;
-        border-image: linear-gradient(to right, #FF4B3B, #FAE442, #2AA8F2);
+        /* padding: 5px; */
+        
     }
 
 
