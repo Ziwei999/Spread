@@ -42,15 +42,37 @@ article{
         padding: 20px;
 
     }
+    a{
+        color: black;
+        font-style: italic;
+    }
+    blockquote{
+        font-style: italic;
+        line-height: 1.5;
+        padding: 20px;
+    }
     header{
         background-color: black;
         color: white;
-        padding: 20px;
+        padding: 50px;
         
     }
     h1{
         font-size: 130px;
         max-width: 12ch;
+    }
+    h3{
+        font-size: 15px;
+    }
+    header h2{
+        font-size: 50px;
+    }
+    header p{
+        font-size: 15px;
+    }
+    header a{
+        color: white;
+        font-style: italic;
     }
     article{
         display: flex;
@@ -60,10 +82,33 @@ article{
         margin-top: 20px;
         border-image: linear-gradient(to right, #FF4B3B 0%,#FAE442 50%, #2AA8F2 100%) 1;
         border-radius: 5px; /* this doesn't work */
-        border-width: 4px;
+        border-width: 5px;
         border-style: solid;
+        padding: 25px;
         /* padding: 5px; */
         
+    }
+    #red{
+        color: red;
+        padding: 10px;
+
+    }
+    #red::before{
+        content: '';
+       display: inline-block;
+       width: 25px;
+       height: 25px;
+       /* -moz-border-radius: 7.5px;
+       -webkit-border-radius: 7.5px; */
+       border-radius: 50%;
+       background-color: #FF4B3B;
+       padding: 10px;
+       
+       
+    }
+    p{
+        line-height: 1.5;
+        padding: 20px;
     }
 
 
