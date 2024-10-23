@@ -93,9 +93,13 @@ article{
         
     }
     #red{
-        color: red;
+        
         padding: 10px;
 
+    }
+    .r{
+        text-decoration-color: #CE5A67;
+        
     }
     #red::before{
         content: '';
@@ -105,7 +109,7 @@ article{
        /* -moz-border-radius: 7.5px;
        -webkit-border-radius: 7.5px; */
        border-radius: 50%;
-       background-color: #FF4B3B;
+       background-color: #FF0000;
        padding: 10px;
        
        
@@ -113,6 +117,36 @@ article{
     p{
         line-height: 1.5;
         padding: 20px;
+    }
+    span{
+        text-decoration: underline;
+        text-decoration-thickness: 8px;
+    }
+    .y{
+       text-decoration-color: #E9B824;
+       
+    }
+    .o{
+        text-decoration-color: #F79327;
+        
+    }
+    .g{
+        text-decoration-color: #A6CF98;
+    }
+    .b{
+        text-decoration-color: #006BFF;
+    }
+    .brown{
+        text-decoration-color: #654520;
+
+    }
+    .bg{
+        text-decoration-color: #3EC9C1;
+
+    }
+    .lg{
+        text-decoration-color: #F6F5F5;
+
     }
 
 
