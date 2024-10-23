@@ -38,10 +38,21 @@ article{
     :root{
         --root-size: 50px;
     }
+    header{
+        background-color: black;
+        color: white;
+        padding: 20px;
+        
+    }
+    h1{
+        font-size: 130px;
+        max-width: 12ch;
+    }
     article{
         display: flex;
         border: 2px;
-        background: linear-gradient(to right, #FF4B3B, #FAE442, #2AA8F2);
+        border-style: solid;
+        border-image: linear-gradient(to right, #FF4B3B, #FAE442, #2AA8F2);
     }
 
 
