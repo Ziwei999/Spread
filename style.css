@@ -30,8 +30,19 @@ p, blockquote{
     font-family: Inter;
 }
 
+article{
+    display: flex;
+}
+
 @media(min-width:600px){
     :root{
         --root-size: 50px;
     }
+    article{
+        display: flex;
+        border: 2px;
+        background: linear-gradient(to right, #FF4B3B, #FAE442, #2AA8F2);
+    }
+
+
 }
