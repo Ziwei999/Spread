@@ -5,8 +5,8 @@
 }
 
 body{
-    background-color: black;
-    color: aliceblue;
+    background-color: white;
+    color: black;
     font-size: var(--root-size);
 }
 
