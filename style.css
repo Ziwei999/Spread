@@ -50,11 +50,15 @@ article{
         font-style: italic;
         line-height: 1.5;
         padding: 20px;
+        border-left: 1rem solid;
+        border-image: linear-gradient(to bottom, #FF4B3B 0%,#FAE442 50%, #2AA8F2 100%) 1;
+        border-radius: 25px;
     }
     header{
         background-color: black;
         color: white;
         padding: 50px;
+        
         
     }
     h1{
@@ -81,8 +85,8 @@ article{
         outline-color: linear-gradient(to right, #FF4B3B, #FAE442, #2AA8F2); */
         margin-top: 20px;
         border-image: linear-gradient(to right, #FF4B3B 0%,#FAE442 50%, #2AA8F2 100%) 1;
-        border-radius: 5px; /* this doesn't work */
-        border-width: 5px;
+        border-radius: 50%; /* this doesn't work */
+        border-width: 10px;
         border-style: solid;
         padding: 25px;
         /* padding: 5px; */
