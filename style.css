@@ -104,45 +104,39 @@ span{
     text-decoration-thickness: 3px;
     }
 
+.r, .o, .y, .g, .b, .brown, .bg, .lg{
+    text-decoration: 3px underline;  
+}
+
 .r{
-    text-decoration: 3px underline;
-    text-decoration-color: #CE5A67; 
-    }
-
-.y{
-    text-decoration: underline;
-
-    text-decoration-color: #E9B824;
+    text-decoration-color: #FF4B3B; 
     }
 
 .o{
-    text-decoration: underline;
-
-    text-decoration-color: #F79327;   
+    text-decoration-color: #FE8350;   
     }
 
+.y{
+    text-decoration-color: #FBBE40;
+    }
+       
 .g{
-    text-decoration: underline;
-    text-decoration-color: #A6CF98;
+    text-decoration-color: #92C69A;
     }
         
 .b{
-    text-decoration: underline;
-    text-decoration-color: #006BFF;
+    text-decoration-color: #2AA8F2;
     }
 
 .brown{
-    text-decoration: underline;
     text-decoration-color: #654520;
     }
 
 .bg{
-    text-decoration: underline;
-    text-decoration-color: #3EC9C1;
+    text-decoration-color: #5EB7C6;
     }
 
 .lg{
-    text-decoration: underline;
     text-decoration-color: #F6F5F5;
     }
 
@@ -163,8 +157,59 @@ a:hover:active {
     padding: 10px;
     margin-right: .5rem;
     margin-left: 1rem;
-    background-color: red;
     }
+
+#red{
+    background-color: #FF4B3B;
+}
+
+#red-orange{
+    background-color: #FE713D;
+}
+
+#orange{
+    background-color: #FE8350;
+}
+
+#orange-yellow{
+    background-color: #FBBE40;
+}
+
+#yellow{
+    background-color: #FAE442;
+}
+
+#yellow-green{
+    background-color: #C6D56E;
+}
+
+#green{
+    background-color: #92C69A;
+}
+
+#green-blue{
+    background-color: #5EB7C6;
+}
+
+#blue{
+    background-color: #2AA8F2;
+}
+
+#blue-purple{
+    background-color: #2A7DF2;
+}
+
+#purple{
+    background-color: #5C4DF7;
+}
+
+#purple-pink{
+    background-color: #C875FF;
+}
+
+#pink{
+    background-color: #FF75CA;
+}
 
 section aside{
     display: flex;
