@@ -2,15 +2,21 @@
 :root{
     --root-size: 100px;
     --fg-color:white;
+    --line-hight: 1.5;
     }
+
 
 body{
     background-color: black;
     color: white;
     font-size: var(--root-size);
+
+    }
+    a{
+        font-style: italic;
     }
 
-.block{
+.border{
     background-color: white;
     color: black;
     border-image: linear-gradient(to right, #FF4B3B 0%,#FAE442 50%, #2AA8F2 100%) 1;
@@ -57,7 +63,7 @@ h4{
 p, blockquote{
     font-size: 16px;
     font-family: Inter;
-    line-height: 1.5;
+    line-height: var(--line-hight);
     }
 
 p{
@@ -156,7 +162,7 @@ a:hover:active {
     background-color: red;
     }
 
-aside{
+section aside{
     display: flex;
     align-items:first baseline;
 
@@ -181,3 +187,20 @@ hr{
 #author{
     float: right;
     }
+
+    @media (min-width: 600px) {
+        :root { --background: coral; 
+        }
+        body{
+            padding: 30px;
+        }
+       .block{
+            display: flex;
+	        flex-direction: row;
+        }
+        aside ,h2{
+            width: 30ch;
+        }
+        
+    }
+  
