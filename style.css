@@ -1,6 +1,6 @@
 
 :root{
-    --root-size: 100px;
+    --root-size: 75px;
     --fg-color:white;
     --line-hight: 1.5;
     }
@@ -12,6 +12,11 @@ body{
     font-size: var(--root-size);
 
     }
+
+header p{
+    font-size: 20px;
+
+}
 
 a{
     font-style: italic;
@@ -39,7 +44,7 @@ a{
     }      
 
 h1{
-    font-size: 48px;
+    font-size: var(--root-size);
     font-family: Jomolhari;
     padding-top: 7rem;
     margin: 1rem;
@@ -76,17 +81,19 @@ h4{
     font-weight:300;
     }
 
-p, blockquote{
+/* p, blockquote{
     font-size: 16px;
     font-family: Inter;
     line-height: var(--line-hight);
-    }
+    } */
 
-p{
+.body p{
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    font-size: 16px;
+    line-height: var(--line-hight);
     }
 
 blockquote{
@@ -96,6 +103,7 @@ blockquote{
     margin-left: 2rem;
     border-left: .5rem solid;
     border-image: linear-gradient(to bottom, #FF4B3B 0%,#FAE442 50%, #2AA8F2 100%) 1;
+    font-size: 20px;
     }
 
 #summary{
@@ -257,6 +265,9 @@ hr{
     }
 
 @media (min-width: 600px) {
+    :root{
+
+    }
     body{
 
         
@@ -310,15 +321,7 @@ hr{
     }
         
     }
-     @media (max-width: 1024px){
-        /* header{
-            margin-left: 5rem;
-            margin-right: 5rem;
-            max-width: 50ch;
-            
-        } */
-
-    }
+ 
 
 
   
