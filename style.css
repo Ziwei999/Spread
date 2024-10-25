@@ -12,8 +12,9 @@ body{
     font-size: var(--root-size);
 
     }
-    a{
-        font-style: italic;
+
+a{
+    font-style: italic;
     }
 
 .border{
@@ -24,7 +25,6 @@ body{
     border-style: solid;
     margin-bottom: 60px;
     padding: 20px; 
-
     }      
 
 h1{
@@ -32,6 +32,10 @@ h1{
     font-family: Jomolhari;
     padding-top: 7rem;
     margin: 1rem;
+    }
+
+.break {
+    display: block; 
     }
 
 h2{
@@ -52,13 +56,13 @@ h4{
     margin: 1rem;
     padding-top: 1rem;
 
-}
+    }
 
 #details{
     font-size: 12px;
     margin: 1rem;
     font-weight:300;
-}
+    }
 
 p, blockquote{
     font-size: 16px;
@@ -86,15 +90,15 @@ blockquote{
     margin: 1rem;
     padding-bottom: 50px;
     font-weight: 200;
-}
+    }
 
 aside{
     display:flex;
-}
+    }
 
 .body{
     padding-bottom: 20px;
-}
+    }
 
 span{
     text-decoration-thickness: 3px;
@@ -165,8 +169,7 @@ a:hover:active {
 section aside{
     display: flex;
     align-items:first baseline;
-
-}
+    }
 
 hr{
     border-image: linear-gradient(to right, #FF4B3B 0%,#FAE442 50%, #2AA8F2 100%) 1;
@@ -192,14 +195,28 @@ hr{
         :root { --background: coral; 
         }
         body{
-            padding: 30px;
+            padding: 1rem 15rem;
         }
        .block{
             display: flex;
 	        flex-direction: row;
         }
-        aside ,h2{
+        h2{
+            font-size: 1.75rem;
+            width: 25ch;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+        }
+        aside {
             width: 30ch;
+        }
+        h1{
+            font-size: 4rem;
+            line-height: 6rem;
+            padding-bottom: 1rem;
+        }
+        #details{
+            font-size: 1rem;
         }
         
     }
