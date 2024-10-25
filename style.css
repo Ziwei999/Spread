@@ -18,8 +18,12 @@ a{
     }
     
 header{
-        padding: 30px;
+        /* padding: 30px; */
     }
+
+#subheader{
+    width: 25ch;
+}
 
 .border{
     background-color: white;
@@ -36,6 +40,7 @@ h1{
     font-family: Jomolhari;
     padding-top: 7rem;
     margin: 1rem;
+    width: 11ch;
     }
 
 .break {
@@ -144,10 +149,17 @@ span{
 .lg{
     text-decoration-color: #F6F5F5;
     }
+.v{
+    text-decoration-color: #7E60BF;
+    }
+.p{
+    text-decoration-color: #7A1CAC;
+}
 
 a {
     color: #2AA8F2; 
     transition: color 0.3s ease, border-bottom-color 0.3s ease; 
+    text-decoration: underline;
     }
 
 a:hover:active {
@@ -243,17 +255,29 @@ hr{
 
 @media (min-width: 600px) {
     body{
-        /* padding: 1rem 15rem; */
+        /* margin-left: 10rem;
+        margin-right: 10rem; */
 
         
+    }
+    p{
+        font-size: 18px;
+    }
+    .border{
+        /* margin-left: 5rem;
+        margin-right: 5rem; */
     }
     .block{
         display: flex;
 	    flex-direction: row;
+        
     }
     header{
-        padding: 50px;
+        margin-left: 20rem;
+        margin-right: 20rem;
+        
     }
+   
     h2{
         font-size: 1.75rem;
         width: 15ch;
@@ -278,6 +302,16 @@ hr{
     }
         
     }
+     /* @media (max-width: 1280px){
+        header{
+            margin-left: 5rem;
+            margin-right: 5rem;
+            
+        }
+
+    } */
+
+
   
 /* @media (max-width: 600px) and{
     body{
