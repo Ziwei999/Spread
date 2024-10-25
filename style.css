@@ -17,12 +17,12 @@ a{
     font-style: italic;
     }
     
-header{
-    max-width: 20ch;
+/* header{
+    max-width: 30ch;
     margin-left: 5rem;
     margin-right: 5rem;
-        /* padding: 30px; */
-    }
+        
+    } */
 
 #subheader{
     width: 25ch;
@@ -35,7 +35,7 @@ header{
     border-width: 10px;
     border-style: solid;
     margin-bottom: 60px;
-    padding: 20px; 
+    /* padding: 20px;  */
     }      
 
 h1{
@@ -268,22 +268,23 @@ hr{
     p{
         font-size: 18px;
     }
-    .border{
-        /* margin-left: 5rem;
-        margin-right: 5rem; */
-    }
+    /* .border{
+        margin-left: 15rem;
+        margin-right: 15rem;
+        max-width: 50ch;
+    } */
     .block{
         display: flex;
 	    flex-direction: row;
         
     }
-    header{
+    /* header{
         margin-left: 15rem;
         margin-right: 15rem;
         max-width: 50ch;
         
         
-    }
+    } */
    
     h2{
         font-size: 1.75rem;
@@ -310,12 +311,12 @@ hr{
         
     }
      @media (max-width: 1024px){
-        header{
+        /* header{
             margin-left: 5rem;
             margin-right: 5rem;
             max-width: 50ch;
             
-        }
+        } */
 
     }
 
