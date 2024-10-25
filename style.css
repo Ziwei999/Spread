@@ -98,6 +98,7 @@ aside{
 
 .body{
     padding-bottom: 20px;
+    
     }
 
 span{
@@ -236,26 +237,55 @@ hr{
     float: right;
     }
 
-    @media (min-width: 600px) {
-        :root { --background: coral; 
-        }
-        body{
-            padding: 1rem 15rem;
-        }
-       .block{
-            display: flex;
-	        flex-direction: row;
-        }
-        h2{
-            font-size: 1.75rem;
-            width: 25ch;
-            padding-top: 1rem;
-            padding-bottom: 2rem;
-        }
-        aside {
-            width: 30ch;
-        }
-        h1{
+@media (min-width: 600px) {
+    body{
+        padding: 1rem 15rem;
+    }
+    .block{
+        display: flex;
+	    flex-direction: row;
+    }
+    h2{
+        font-size: 1.75rem;
+        width: 25ch;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    aside {
+        width: 30ch;
+    }
+    h1{
+        font-size: 4rem;
+        line-height: 6rem;
+        padding-bottom: 1rem;
+    }
+    #details{
+        font-size: 1rem;
+    }
+    .body{
+        width:auto;
+    }
+        
+    }
+  
+@media (width: 600px) and{
+    body{
+        padding: 1rem 15rem;
+    }
+    .block{
+        display: flex;
+	    flex-direction: row;
+    }
+    h2{
+        font-size: 1.75rem;
+        width: 25ch;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    aside {
+        width: 30ch;
+    }
+    h1{
             font-size: 4rem;
             line-height: 6rem;
             padding-bottom: 1rem;
