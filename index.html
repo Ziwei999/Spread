@@ -11,6 +11,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jomolhari&display=swap" rel="stylesheet">
+        <script>
+            const toggleDetails = open => document.querySelectorAll('details').forEach(details => details.open = open)
+        
+            window.addEventListener('beforeprint', () => toggleDetails(true))
+            window.addEventListener('afterprint', () => toggleDetails(false))
+        </script>
     </head>
     <body>
         <header>
@@ -87,7 +93,7 @@
                         <span class="circle" id="yellow-green"></span><h2>Color Changes in Different Contexts</h2>
                     </aside>
                         <section class="body">
-                            <p>In full sunlight, the petals of a red flower appear bright red against duller green leaves. At dusk, the red flowers become darker while <span class="b">blue</span> flowers appear brighter than they did in full daylight. This effect is called the <a href="https://en.wikipedia.org/wiki/Purkinje_effect">Purkinje shift</a>.</p>
+                            <p>In full sunlight, the petals of a red flower appear bright red against duller green leaves. At dusk, the <span class="r">red</span> flowers become darker while <span class="b">blue</span> flowers appear brighter than they did in full daylight. This effect is called the <a href="https://en.wikipedia.org/wiki/Purkinje_effect">Purkinje shift</a>.</p>
                             <p>Albers based his career on studying these kinds of shifts in color. In his book Interaction of Color, first published in 1963, he created color theory exercises that could make “colors lie”—as Tamara Shopsin put it in her essay <a href="https://www.servinglibrary.org/journal/11/homage-to-an-homage-of-an-homage">“Homage to an Homage of an Homage.” </a> By itself, a color appears dominant, but when placed next to an even stronger hue, we can see its more diminished true nature.</p>
                             <p>Sixty years before Interaction of Color, the artist and historian Emily Noyes Vanderpoel published color studies in her forgotten book, <a href="https://www.kickstarter.com/projects/sacredbones/color-problems-a-book-by-emily-noyes-vanderpoel">Color Problems: A Practical Manual for the Lay Student of Color</a>. Her work predicted trends that wouldn't occur for several decades, like the concentric square format of Albers's Homage to the Square.</p>
                         </section>
@@ -130,7 +136,7 @@
                         <section class="body">
                             <p>In the <a href="https://www.xrite.com/hue-test">Farnsworth-Munsell test</a>, in which a subject has to arrange 100 hues on a continuous gradation scale, less than sixteen percent achieve a perfect score. According to Johannes Itten, one of Albers's instructors at the Weimar Bauhaus, distinguishing the many shades of a color depends on the sensitivity of the eye and “the response threshold of the observer.” In English, we only use about thirty names for colors in daily vocabulary, and only a “trained artist can discriminate and name a great many hues,” wrote Umberto Eco in <a href="https://www.servinglibrary.org/journal/11/the-colors-we-see">The Colors We See.</a></p>
                             <p>Albers believed that developing a sensitive eye for color took practice, but it doesn't come without a bit of work: Illustrator Tamara Shopsin writes that Albers's exercises “were hard and time-consuming”; Sillman compared his Interaction of Color to notes from a test kitchen: “To do his exercises, you first have to gather color swatches like ingredients, splice and dice them, layer them and shift them around to test them out on your eyeballs.”</p>
-                                <blockquote>An inventor in Arkansas advertised <a href=" The Chromatic Diet">Vision-Dieter</a>, his special two-color tinted glasses that deter shoppers from buying brightly-colored food packages. He boasted that “you won't believe your eyes” and that the combination of a blue and brown tint was a “secret European color technology.” But the product didn't work and the FDA destroyed most of the glasses.</blockquote> 
+                                <blockquote>An inventor in Arkansas advertised <a href=" The Chromatic Diet">Vision-Dieter</a>, his special two-color tinted glasses that deter shoppers from buying brightly-colored food packages. He boasted that “you won't believe your eyes” and that the combination of a  <span class="b">blue</span> and <span class="brown">brown</span> tint was a “secret European color technology.” But the product didn't work and the FDA destroyed most of the glasses.</blockquote> 
                         </section>   
                 </section>
                 <section class="block">
@@ -159,7 +165,7 @@
                     </aside>
                         <section class="body">
                             <h4>/01</h4>
-                                <p>Collect color paper in at least 5 different colors (suggested: red, blue, purple, orange, and green) in sets of 10 tones from light to dark, for each color. This can be construction paper or scraps of printed color inks on paper found in magazines, etc.</p>
+                                <p>Collect color paper in at least 5 different colors (suggested: <span class="r">red</span>, <span class="b">blue</span>, purple, <span class="o">orange</span>, and <span class="g">green</span>) in sets of 10 tones from light to dark, for each color. This can be construction paper or scraps of printed color inks on paper found in magazines, etc.</p>
                             <h4>/02</h4>
                                 <p>Print this large black and white image divided into 42 panels. Each panel is 8x8 so it can be printed using an 8.5x11 laser printer. You can also select your own image, but don't show the rest of the group until the end.</p>
                             <h4>/03</h4>

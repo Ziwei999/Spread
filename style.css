@@ -16,6 +16,10 @@ body{
 a{
     font-style: italic;
     }
+    
+header{
+        padding: 30px;
+    }
 
 .border{
     background-color: white;
@@ -239,20 +243,25 @@ hr{
 
 @media (min-width: 600px) {
     body{
-        padding: 1rem 15rem;
+        /* padding: 1rem 15rem; */
+
+        
     }
     .block{
         display: flex;
 	    flex-direction: row;
     }
+    header{
+        padding: 50px;
+    }
     h2{
         font-size: 1.75rem;
-        width: 25ch;
+        width: 15ch;
         padding-top: 1rem;
         padding-bottom: 2rem;
     }
     aside {
-        width: 30ch;
+        max-width: 10ch;
     }
     h1{
         font-size: 4rem;
@@ -263,12 +272,14 @@ hr{
         font-size: 1rem;
     }
     .body{
-        width:auto;
+        /* width: 200ch; */
+        
+        
     }
         
     }
   
-@media (width: 600px) and{
+/* @media (max-width: 600px) and{
     body{
         padding: 1rem 15rem;
     }
@@ -294,5 +305,5 @@ hr{
             font-size: 1rem;
         }
         
-    }
+    } */
   
