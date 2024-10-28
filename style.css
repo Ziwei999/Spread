@@ -1,6 +1,6 @@
 
 :root{
-    --root-size: 75px;
+    --root-size: 45px;
     --fg-color:white;
     --line-hight: 1.5;
     }
@@ -10,6 +10,7 @@ body{
     background-color: black;
     color: white;
     font-size: var(--root-size);
+    max-width: 1000ch;
 
     }
 
@@ -17,10 +18,23 @@ header p{
     font-size: 20px;
 
 }
+header{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 
 a{
     font-style: italic;
     }
+
+aside h2{
+    position: sticky;
+    top: 0px; 
+    left: 20px;
+    padding: 10px;
+    
+
+}
     
 /* header{
     max-width: 30ch;
@@ -40,7 +54,8 @@ a{
     border-width: 10px;
     border-style: solid;
     margin-bottom: 60px;
-    /* padding: 20px;  */
+    padding: 5px; 
+    
     }      
 
 h1{
@@ -131,40 +146,51 @@ span{
 
 .r{
     text-decoration-color: #FF4B3B; 
+    background-color: #FF4B3B;
+
     }
 
 .o{
-    text-decoration-color: #FE8350;   
+    text-decoration-color: #FE8350;  
+    background-color: #FE8350;
     }
 
 .y{
     text-decoration-color: #FBBE40;
+    background-color:#FBBE40;
     }
        
 .g{
     text-decoration-color: #92C69A;
+    background-color:#92C69A;
     }
         
 .b{
     text-decoration-color: #2AA8F2;
+    background-color:#2AA8F2;
     }
 
 .brown{
     text-decoration-color: #654520;
+    background-color:#654520;
     }
 
 .bg{
     text-decoration-color: #5EB7C6;
+    background-color:#5EB7C6;
     }
 
 .lg{
     text-decoration-color: #F6F5F5;
+    background-color: #F6F5F5;
     }
 .v{
     text-decoration-color: #7E60BF;
+    background-color:#7E60BF;
     }
 .p{
     text-decoration-color: #7A1CAC;
+    background-color: #7A1CAC;
 }
 
 a {
@@ -264,64 +290,133 @@ hr{
     float: right;
     }
 
-@media (min-width: 600px) {
+@media (min-width: 1111px) {
     :root{
 
     }
     body{
-
-        
-        /* margin-left: 10rem;
-        margin-right: 10rem; */
+        margin-left: 30rem;
+        margin-right: 30rem;
+        width: 40ch;
 
         
     }
     p{
         font-size: 18px;
     }
-    /* .border{
-        margin-left: 15rem;
-        margin-right: 15rem;
-        max-width: 50ch;
-    } */
+ 
+    blockquote {
+        line-height: 1.3;
+        
+
+    }
     .block{
         display: flex;
 	    flex-direction: row;
         
     }
-    /* header{
-        margin-left: 15rem;
-        margin-right: 15rem;
-        max-width: 50ch;
-        
-        
-    } */
    
     h2{
-        font-size: 1.75rem;
+        font-size: 2rem;
         width: 15ch;
         padding-top: 1rem;
         padding-bottom: 2rem;
+        line-height: 1.4;
     }
     aside {
-        max-width: 10ch;
+        max-width: 30ch;
+        
     }
     h1{
-        font-size: 4rem;
-        line-height: 6rem;
+        font-size: 140px;
+        line-height: 10rem;
         padding-bottom: 1rem;
     }
     #details{
         font-size: 1rem;
     }
-    .body{
-        /* width: 200ch; */
-        
+   
+    
+    h3{
+        font-size: 1.75rem;
+    }
+}
+    
+
+    @media (min-width: 426px) and (max-width: 800px){
+
+        body{
+            margin-left: 3rem;
+            margin-right: 3rem;
+        }
+        header{
+            /* margin-left: 5rem;
+            margin-right: 5rem; */
+        }
+        h1{
+            font-size: 80px;
+        }
+        .border{
+            /* margin-left: 5rem;
+            margin-right: 5rem; */
+            
+        }
+        blockquote {
+            line-height: 1.3;
+
+        }
+
+    }
+
+    @media (min-width:801px) and (max-width: 1110px){
+        body{
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+        h1{
+            font-size: 150px;
+        }
+    }
+
+   
+
+    /* @media screen and (min-width: 1041px) {
+        body{
+            margin-left: 20rem;
+            margin-right: 20rem;
+        }
+
+        h1{
+            font-size: 150px;
+        }
+       .body p{
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        aside{
+            max-width: 30ch;
+           
+           
+
+        }
+
+        .border{
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        h2{
+            font-size: 50px;
+            line-height: 1.3;
+        }
+        blockquote{
+            font-size: 30px;
+        }
         
     }
-        
-    }
- 
+  */
 
 
   
