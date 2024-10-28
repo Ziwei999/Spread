@@ -293,7 +293,7 @@ hr{
     }
 
     body{
-
+        margin: 2.5rem 15rem;
     }
     p{
         font-size: 18px;
@@ -319,8 +319,8 @@ hr{
         
     }
     h1{
-        font-size: 6.875rem;
-        line-height: 10rem;
+        font-size: 6.75rem;
+        line-height: 7rem;
         padding-bottom: 1rem;
     }
     #details{
