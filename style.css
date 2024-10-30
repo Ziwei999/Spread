@@ -17,21 +17,35 @@
     --violet-color:#7E60BF;
     --purple-color:#7A1CAC;
     --purple-pink: #C875FF;
-    
+    --black: black;
+    --white: rgb(245, 245, 245);    
 }
 
 body{
     background-color: var( --main-background-color);
     color: var( --main-background-color);
     font-size: var(--root-size);
-    /* max-width: 1000ch; */
-    }
+}
 
-header{
-    background: linear-gradient(300deg,#FF4B3B ,#FE8350 ,#FAE442 ,#92C69A, #2AA8F2, #7E60BF, #7A1CAC);
+/* HEADING */
+header::before {
+    background: linear-gradient(300deg, #FF4B3B, #FE8350, #FAE442, #92C69A, #2AA8F2, #7E60BF, #7A1CAC);
     background-size: 180% 180%;
     animation: gradient-animation 6s ease infinite;
-    padding: 1rem;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1; 
+    margin: 0;
+    padding:0;
+}
+
+header{
+    margin: 0;
+    padding:0;
 }
 
 @keyframes gradient-animation {
@@ -44,7 +58,7 @@ header{
     100% {
       background-position: 0% 50%;
     }
-  }
+}
 
 .header{
     padding-top: 2rem;
@@ -55,28 +69,24 @@ header{
     justify-content: space-between;
 }
 
-header p{
-    font-size: 20px;
+#medium{
+    float: left;
+    font-size: var(--root-size);
 }
 
-
-a{
-    font-style: italic;
-    }
-
-aside{
-    position: sticky;
-    top: 0px; 
-    left: 20px;
-    background-color: var(--main-color);
+#author{
+    float: right;
+    font-size: var(--root-size);
 }
 
-aside .title{
-    /* position: sticky;
-    top: 0px; 
-    left: 20px; */
-    padding: 10px;
-    display: flex;
+.break {
+    display: block; 
+}
+
+hr{
+    border: black;
+    border-bottom: 7px solid;
+    margin: var(--root-size);
 }
 
 #subheader{
@@ -84,15 +94,36 @@ aside .title{
     font-size: 20px;
 }
 
+#summary{
+    margin: var(--root-size);
+    padding-bottom: 30px;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+/* BODY TEXT */
 .border{
     background-color: var(--main-color);
     color: var(--main-background-color);
-    border-image: linear-gradient(to bottom right, #FF4B3B 0%,#FAE442 50%, #2AA8F2 100%) 1;
-    border-width: 10px;
-    border-style: solid;
+    border-radius: 10px;
     margin-bottom: 60px;
     padding: 5px; 
-    }      
+}    
+
+aside{
+    position: sticky;
+    display: flex;
+    top: 0px; 
+    left: 20px;
+    background-color: var(--main-color);
+    align-items: first baseline;
+
+}
+
+aside .title{
+    padding: 10px;
+    display: flex;
+}
 
 h1{
     font-family: Jomolhari;
@@ -101,11 +132,7 @@ h1{
     width: 11ch;
     line-height: 1.5;
     font-size:16px;
-    }
-
-.break {
-    display: block; 
-    }
+}
 
 h2{
     font-size: 22px;
@@ -118,132 +145,145 @@ h2{
 h3{
     font-size: 14px;
     font-family: Inter;
-    }
+}
 
 h4{
     font-size: 36px;
     margin: 1rem;
     padding-top: var(--root-size);
-
-    }
+}
 
 article{
     margin-top: var(--root-size);
 }
 
 #details{
-    font-size: 12px;
+    font-size: 9px;
     margin: var(--root-size);
-    font-weight:300;
+    font-weight: 400;
     }
-
-/* p, blockquote{
-    font-size: 16px;
-    font-family: Inter;
-    line-height: var(--line-hight);
-    } */
+    
+.body{
+    padding-bottom: 20px;
+}
 
 .body p{
-    margin-left: 5rem;
+    margin-left: 5%;
     margin-right: 5%;
     margin-bottom: var(--root-size);
     margin-top: var(--root-size);
     font-size: 16px;
     line-height: var(--line-hight);
-    }
+}
 
 blockquote{
     font-style: italic;
     padding-left: 20px;    
     padding-right: 20px;
     margin-left: 2rem;
-    border-left: .25rem solid grey;
+    border-image: linear-gradient(to bottom, #FF4B3B 0%,#FAE442 50%, #2AA8F2 100%) 1;
+    border-left: 5px solid transparent;
     font-size: 20px;
-    }
-
-#summary{
-    margin: var(--root-size);
-    padding-bottom: 30px;
-    font-weight: 200;
-    font-size: 16px;
-    }
-
-aside{
-    display:flex;
-    }
-
-.body{
-    padding-bottom: 20px;
-    
-    }
-
-span{
-    text-decoration-thickness: 3px;
-    }
-
-/* .r, .o, .y, .g, .b, .brown, .bg, .lg{
-    text-decoration: 3px underline;  
-} */
-
-.r{
-    /* text-decoration-color: #FF4B3B;  */
-    background-color: var(--red-color);
-
-    }
-
-.o{
-    /* text-decoration-color: #FE8350;   */
-    background-color: var(--orange-color);
-    }
-
-.y{
-    /* text-decoration-color: #FBBE40; */
-    background-color:var(--orange-yellow);
-    }
-       
-.g{
-    /* text-decoration-color: #92C69A; */
-    background-color:var(--green-color);
-    }
-        
-.b{
-    /* text-decoration-color: #2AA8F2; */
-    background-color:var(--blue-color);
-    }
-
-.brown{
-    /* text-decoration-color: #654520; */
-    background-color:#654520;
-    }
-
-.bg{
-    /* text-decoration-color: #5EB7C6; */
-    background-color:var(--green-blue);
-    }
-
-.lg{
-    /* text-decoration-color: #F6F5F5; */
-    background-color: #F6F5F5;
-    }
-.v{
-    /* text-decoration-color: #7E60BF; */
-    background-color:var(--violet-color);
-    }
-.p{
-    /* text-decoration-color: #7A1CAC; */
-    background-color: var(--purple-color);
 }
 
+/* MARK STYLING */
+span{
+    text-decoration-thickness: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+.r{
+    background-color: var(--red-color);
+    color: white;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+}
+.o{
+    background-color: var(--orange-color);
+    color: white;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+}
+.y{
+    background-color:var(--orange-yellow);
+    color: white;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+}    
+.g{
+    background-color:var(--green-color);
+    color: white;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+}   
+.b{
+    background-color:var(--blue-color);
+    color: white;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+}
+.brown{
+    background-color:#7f4606;
+    color: white;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+}
+.bg{
+    background-color:var(--green-blue);
+    color: white;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+}
+.lg{
+    background-color: rgb(179, 179, 179);
+    color: white;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+
+}
+.grey{
+    background-color: rgb(112, 112, 112);
+    color: white;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+}
+.gold{
+    background-color: goldenrod;
+    color: white;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+}
+.v{
+    background-color:var(--violet-color);
+    color: white;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+}
+.p{
+    background-color: var(--purple-color);
+    color: white;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+}
+.i{
+    background-color: #4B0082;
+    color: white;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+}
+.bl{
+    background-color: var(--black);
+    color: white;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+}
+.w{
+    border: solid 1px rgb(214, 214, 214);    
+    background-color: white;
+    color: black;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+}
+
+/* LINK STYLING */
 a {
     color: #2AA8F2; 
     transition: color 0.3s ease, border-bottom-color 0.3s ease; 
     text-decoration: underline;
-    }
-
+    font-style: italic;
+}
 a:hover:active {
     color: darkblue; 
-    }   
+}   
 
+/* CIRCLE STYLING     */
 .circle{
     display: inline-block;
     width: 20px;
@@ -253,187 +293,131 @@ a:hover:active {
     margin-right: .5rem;
     margin-left: var(--root-size);
     margin-top: 20px;
+    filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
     }
 
 #red{
     background-color: var(--red-color);
 }
-
 #red-orange{
     background-color: #FE713D;
 }
-
 #orange{
     background-color: #FE8350;
 }
-
 #orange-yellow{
     background-color: var(--orange-yellow);
 }
-
 #yellow{
     background-color: var(--yellow-color);
 }
-
 #yellow-green{
     background-color: var( --yellow-green);
 }
-
 #green{
     background-color: var(--green-color);
 }
-
 #green-blue{
     background-color: var(--green-blue);
 }
-
 #blue{
     background-color: var(--blue-color);
 }
-
 #blue-purple{
     background-color: var(--blue-purple);
 }
-
 #purple{
     background-color: var(--violet-color);
 }
-
 #purple-pink{
     background-color: var(--purple-pink);
 }
-
 #pink{
     background-color: #FF75CA;
 }
 
-section aside{
-    display: flex;
-    align-items:first baseline;
-    }
-
-hr{
-    border-image: linear-gradient(to right, #FF4B3B 0%,#FAE442 50%, #2AA8F2 100%) 1;
-    border-bottom: 10px solid transparent;
-    margin: var(--root-size);
-    }
-
-
-#medium{
-    float: left;
-    font-size: var(--root-size);
-    }
-
-#author{
-    float: right;
-    font-size: var(--root-size);
-    }
-
-   
-
-
- @media (min-width: 1281px){
-        :root{
-    
-        }
-        body{
-            margin: 2.5rem 15rem;
-        }
-    
-        .body{
-            font-size: 18px;
-            margin-left: 5rem;
-            /* width: 50ch; */
-        }
-     
-        blockquote {
-            line-height: 1.3;
-        }
-    
-        .block{
-            display: flex;
-            flex-direction: row;
-        }
-    
-       .circle{
-            margin-top: 40px;
-       }
-    
-        h2{
-            font-size: 2rem;
-            width: 15ch;
-            padding-top: 1rem;
-            padding-bottom: 2rem;
-            line-height: 1.4;
-        }
-        
-        aside {
-            max-width: 30ch;
-            /* position: sticky;
-            top: 0px; 
-            left: 20px; */
-            
-        }
-        aside .title{
-            position: sticky;
-            top: 0px; 
-            left: 20px;
-            padding: 20px;
-            display: flex;
-        }
-
-        h1{
-            font-size: 6.5rem;
-            line-height: 7.25rem;
-            padding-bottom: 1rem;
-        }
-        #details{
-            font-size: 1rem;
-        }
-        
-        h3{
-            font-size: 1.25rem;
-        }
-        #subheader{
-            font-size: 2rem;
-        }
-        #medium{
-            float: left;
-            font-size: 1.55rem;
-            }
-        
-        #author{
-            float: right;
-            font-size: 1.55rem;
-            }
-    }
-
-    @media (min-width: 1100px) and (max-width: 1280px){
+/* MEDIA QUERY */
+@media (min-width: 1281px){
     :root{
-
+    
     }
-
     body{
-        margin: 2.5rem 10rem;
+        margin: 2.5rem 15rem;
     }
-
-    p{
+    .body{
         font-size: 18px;
+        margin-left: 5rem;
     }
- 
     blockquote {
         line-height: 1.3;
     }
+    .block{
+        display: flex;
+        flex-direction: row;
+    }
+    .circle{
+        margin-top: 40px;
+    }
+    h2{
+        font-size: 2rem;
+        width: 15ch;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        line-height: 1.4;
+    }
+    aside {
+        max-width: 30ch;
+    }
+    aside .title{
+        position: sticky;
+        top: 0px; 
+        left: 20px;
+        padding: 20px;
+        display: flex;
+    }
+    h1{
+        font-size: 6.5rem;
+        line-height: 7.25rem;
+        padding-bottom: 1rem;
+    }
+    #details{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 1.25rem;
+    }
+    #subheader{
+        font-size: 2rem;
+    }
+    #medium{
+        float: left;
+        font-size: 1.55rem;
+    }
+    #author{
+        float: right;
+        font-size: 1.55rem;
+    }
+}
 
+@media (min-width: 1100px) and (max-width: 1280px){
+    :root{
+    }
+    body{
+        margin: 2.5rem 10rem;
+    }
+    p{
+        font-size: 18px;
+    }
+    blockquote {
+        line-height: 1.3;
+    }
     .block{
         display: flex;
 	    flex-direction: row;
     }
-
    .circle{
         margin-top: 40px;
-   }
-
+    }
     h2{
         font-size: 2rem;
         width: 15ch;
@@ -450,8 +434,7 @@ hr{
         position: sticky;
         top: 0px; 
         left: 20px;
-     }
-
+    }
     h1{
         font-size: 6.5rem;
         line-height: 7.25rem;
@@ -470,30 +453,25 @@ hr{
     #medium{
         float: left;
         font-size: 1.25rem;
-        }
-    
+    }
     #author{
         float: right;
         font-size: 1.25rem;
-        }
+    }
 }
 
 @media (min-width: 950px) and (max-width: 1099px){
-
     body{
         margin-left: 7rem;
         margin-right: 7rem;
     }
-   
     h1{
         font-size: 6rem;    
         line-height: 6rem;       
     }
- 
     blockquote {
         line-height: 1.3;
     }
-  
     #subheader{
         font-size: 1.7rem;
         line-height: 1.2;
@@ -501,127 +479,98 @@ hr{
     #medium{
         float: left;
         font-size: 1.1rem;
-        }
-    
+    }
     #author{
         float: right;
         font-size: 1.1rem;
-        }
-
+    }
 }
 
-    @media (min-width: 850px) and (max-width: 949px){
+ @media (min-width: 850px) and (max-width: 949px){
 
-        body{
-            margin-left: 6.5rem;
-            margin-right: 6.5rem;
-        }
-        header{
-            /* margin-left: 5rem;
-            margin-right: 5rem; */
-        }
-        h1{
-            font-size: 4.825rem;    
-            line-height: 6rem;       
-        }
-        .border{
-            /* margin-left: 5rem;
-            margin-right: 5rem; */
-            
-        }
-        blockquote {
-            line-height: 1.3;
-        }
-        #subheader{
+    body{
+        margin-left: 6.5rem;
+        margin-right: 6.5rem;
+    }
+    h1{
+        font-size: 4.825rem;    
+        line-height: 6rem;       
+    }
+    blockquote {
+        line-height: 1.3;
+    }
+    #subheader{
         font-size: 1.5rem;
-        }
-        .header{
-            margin-top: 1rem;
-        }
-
     }
-
-    @media (min-width: 768px) and (max-width: 849px){
-
-        body{
-            margin-left: 5.25rem;
-            margin-right: 5.25rem;
-        }
-        h1{
-            font-size: 4.825rem;    
-            line-height: 6rem;       
-        }
-
-        blockquote {
-            line-height: 1.3;
-        }
-        #subheader{
-        font-size: 1.4rem;
-        }
-        #medium{
-            float: left;
-            font-size: 1rem;
-            }
-        
-        #author{
-            float: right;
-            font-size: 1rem;
-            }
+    .header{
+        margin-top: 1rem;
     }
-
-
-
-    @media (min-width: 600px) and (max-width: 767px){
-
-        body{
-            margin-left: 3rem;
-            margin-right: 3rem;
-        }
-
-        h1{
-            font-size: 4rem;    
-            line-height: 5.25rem;       
-        }
-
-        blockquote {
-            line-height: 1.3;
-        }
 }
 
-    @media (min-width: 463px) and (max-width: 599px) {
-
-        body{
-            margin-left: 3rem;
-            margin-right: 3rem;
-        }
-      
-        h1{
-            font-size: 3.25rem;    
-            line-height: 5rem;       
-        }
-    
-        blockquote {
-            line-height: 1.3;
-
-        }
-
+@media (min-width: 768px) and (max-width: 849px){
+    body{
+        margin-left: 5.25rem;
+        margin-right: 5.25rem;
     }
-    @media (max-width: 462px){
+    h1{
+        font-size: 4.825rem;    
+        line-height: 6rem;       
+    }
+    blockquote {
+        line-height: 1.3;
+    }
+    #subheader{
+        font-size: 1.4rem;
+    }
+    #medium{
+        float: left;
+        font-size: 1rem;
+    }
+        
+    #author{
+        float: right;
+        font-size: 1rem;
+    }
+}
 
+ @media (min-width: 600px) and (max-width: 767px){
+    body{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    h1{
+        font-size: 4rem;    
+        line-height: 5.25rem;       
+    }
+    blockquote {
+        line-height: 1.3;
+    }
+}
+
+@media (min-width: 463px) and (max-width: 599px) {
+    body{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    h1{
+        font-size: 3.25rem;    
+        line-height: 5rem;       
+    }
+    blockquote {
+        line-height: 1.3;
+        }
+}
+    
+@media (max-width: 462px){
     body{
         margin-left: 1rem;
         margin-right: 1rem;
     }
- 
     h1{
         font-size: 2.5rem;    
         line-height: 3rem;       
     }
-
-
     blockquote {
         line-height: 1.3;
-
     }
-
 }
