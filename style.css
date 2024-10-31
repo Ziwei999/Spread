@@ -103,7 +103,7 @@ aside{
     left: 20px;
     background-color: var(--main-color);
     align-items: first baseline;
-
+    z-index: 1;
 }
 
 aside .title{
