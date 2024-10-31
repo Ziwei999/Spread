@@ -29,8 +29,6 @@ body{
 
 /* HEADING */
 header{
-    margin: 0;
-    padding: 0;
     background: linear-gradient(300deg, #FF4B3B, #FE8350, #FAE442, #92C69A, #2AA8F2, #7E60BF, #7A1CAC);
     background-size: 180% 180%;
     animation: gradient-animation 6s ease infinite;
@@ -329,7 +327,8 @@ a:hover:active {
     
     }
     body{
-        margin: 2.5rem 15rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
     }
     .body{
         font-size: 18px;
@@ -337,6 +336,7 @@ a:hover:active {
     }
     blockquote {
         line-height: 1.3;
+        margin-left: 10%;
     }
     .block{
         display: flex;
@@ -346,7 +346,7 @@ a:hover:active {
         margin-top: 40px;
     }
     h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
         width: 15ch;
         padding-top: 1rem;
         padding-bottom: 2rem;
@@ -368,13 +368,18 @@ a:hover:active {
         padding-bottom: 1rem;
     }
     #details{
-        font-size: 1rem;
+        font-size: 1.15rem;
+    }
+    #summary{
+        font-size: 1.15rem;
     }
     h3{
         font-size: 1.25rem;
     }
     #subheader{
         font-size: 2rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     #medium{
         float: left;
@@ -390,13 +395,15 @@ a:hover:active {
     :root{
     }
     body{
-        margin: 2.5rem 10rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
     }
     p{
         font-size: 18px;
     }
     blockquote {
         line-height: 1.3;
+        margin-left: 10%;
     }
     .block{
         display: flex;
@@ -405,8 +412,11 @@ a:hover:active {
    .circle{
         margin-top: 40px;
     }
+    .title{
+        align-items: first baseline;
+    }
     h2{
-        font-size: 2rem;
+        font-size: 1.35rem;
         width: 15ch;
         line-height: 1.4;
     }
@@ -426,7 +436,9 @@ a:hover:active {
     #details{
         font-size: 1rem;
     }
-
+    #summary{
+        font-size: 1.15rem;
+    }
     h3{
         font-size: 1.5rem;
     }
@@ -455,8 +467,12 @@ a:hover:active {
     #details{
         font-size: 1rem;
     }
+    #summary{
+        font-size: 1.15rem;
+    }
     blockquote {
         line-height: 1.3;
+        margin-left: 10%;
     }
     #subheader{
         font-size: 1.7rem;
@@ -485,14 +501,15 @@ a:hover:active {
     #details{
         font-size: 1rem;
     }
+    #summary{
+        font-size: 1.1rem;
+    }
     blockquote {
         line-height: 1.3;
+        margin-left: 10%;
     }
     #subheader{
         font-size: 1.5rem;
-    }
-    .header{
-        margin-top: 1rem;
     }
 }
 
@@ -507,9 +524,13 @@ a:hover:active {
     }
     blockquote {
         line-height: 1.3;
+        margin-left: 10%;
     }
     #details{
         font-size: 1rem;
+    }
+    #summary{
+        font-size: 1.1rem;
     }
     #subheader{
         font-size: 1.4rem;
@@ -518,7 +539,6 @@ a:hover:active {
         float: left;
         font-size: 1rem;
     }
-        
     #author{
         float: right;
         font-size: 1rem;
@@ -537,8 +557,12 @@ a:hover:active {
     #details{
         font-size: .785rem;
     }
+    #summary{
+        font-size: 1.1rem;
+    }
     blockquote {
         line-height: 1.3;
+        margin-left: 10%;
     }
 }
 
@@ -554,8 +578,12 @@ a:hover:active {
     #details{
         font-size: .74rem;
     }
+    #summary{
+        font-size: 1rem;
+    }
     blockquote {
         line-height: 1.3;
+        margin-left: 10%;
     }
 }
     
