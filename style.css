@@ -32,6 +32,8 @@ header{
     background: linear-gradient(300deg, #FF4B3B, #FE8350, #FAE442, #92C69A, #2AA8F2, #7E60BF, #7A1CAC);
     background-size: 180% 180%;
     animation: gradient-animation 6s ease infinite;
+    padding: 0%;
+    margin: 0%;
 }
 
 @keyframes gradient-animation {
@@ -92,9 +94,9 @@ hr{
     background-color: var(--main-color);
     color: var(--main-background-color);
     border-radius: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     padding: 5px; 
-}    
+}
 
 aside{
     position: sticky;
@@ -262,7 +264,6 @@ a {
     color: #2AA8F2; 
     transition: color 0.3s ease, border-bottom-color 0.3s ease; 
     text-decoration: underline;
-    font-style: italic;
 }
 a:hover:active {
     color: darkblue; 
@@ -319,6 +320,28 @@ a:hover:active {
 }
 #pink{
     background-color: #FF75CA;
+}
+
+footer{
+	font-size: 14px;
+	text-align: right;
+    margin-bottom: 2rem;
+}
+
+.footer-button {
+    background-color: white;   
+    padding: 9px 20px;  
+	border: solid 1.5px;  
+    border-radius: .5rem;  
+	transition: all ease 0.3s;  
+}
+
+.footer-button:hover {
+	color: #black;
+    background-color: black;
+	border: solid white 1.5px;
+	padding: 9px 20px;
+	transition: all ease 0.3s;
 }
 
 /* MEDIA QUERY */
