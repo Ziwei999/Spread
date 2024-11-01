@@ -707,20 +707,64 @@ footer{
 
 @media print{
     :root { 
-        --background: white;
-        color: black; 
+        --background-color: white;
+        --font-color:black;
+        
     }
-    /* blockquote{
-        margin-left: 4rem;
-        border-left: 3px solid black;
-    }
-    .border{
-        border: 2px solid black;
+    /* header, article {
+        display: none !important;
     } */
+     body{
+        background-color: white;
+     }
+     header{
+        background:none;
+        color: black;
+        padding: 2rem;
+        page-break-after: always;
+
+     }
+     aside.title{
+        display: none;
+     }
     .r,.o,.y,.g,.b,.brown,.bg,.lg,.grey,.gold,.v,.p,.i,.bl,.w{
         border: .5px solid grey;
-        background-color: white;
-        color: black;
+        background-color: var(--background-color);
+        color: var(--font-color);
         filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
     }
+
+    .border{
+        border: .5px solid grey;
+    }
+
+    #red,#red-orange, #orange, #orange-yellow, #yellow, #yellow-green, #green, #green-blue,#blue,#blue-purple,#purple, #purple-pink,  #pink{
+        background-color:black;
+    }
+
+
+    h2{
+        font-size: 20px;
+    }
+    .circle{
+        background-color: black;
+    }
+    .body p{
+        font-size: 16px;
+        /* width: 100ch; */
+        /* margin-left: 15rem; */
+    }
+    blockquote{
+        font-size: 18px;
+        /* margin-left: 4rem; */
+        border-left: 2px solid grey;
+        border-image: none;
+    }
+    #summary{
+        font-size: 30px;
+    }
+    footer{
+        display: none;
+    }
+
 }
