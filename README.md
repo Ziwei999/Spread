@@ -1,0 +1,1 @@
+This project 2 was completed by Ziwei and Jolyn in our Typography and Interaction 1 class. The scope of the project was to create a responsive website to be consistent across devices: mobile, tablet, desktop, and print layouts. We chose to do our design around "Everyday Color Theory," by Cortney Cassidy from Medium. Please enjoy. 
