@@ -33,9 +33,9 @@ header{
     background-size: 180% 180%;
     animation: gradient-animation 6s ease infinite;
     padding: 0%;
-    margin: 0%;
+    margin-top: 1rem;
     overflow:hidden;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
 }
 
 @keyframes gradient-animation {
@@ -168,7 +168,6 @@ article{
 blockquote{
     font-style: italic;
     padding: 20px;    
-    /* padding-right: 20px; */
     margin-left: 2rem;
     border-image: linear-gradient(to bottom, #FF4B3B 0%,#FAE442 50%, #2AA8F2 100%) 1;
     border-left: 5px solid transparent;
@@ -706,4 +705,22 @@ footer{
     }
 }
 
-@media 
+@media print{
+    :root { 
+        --background: white;
+        color: black; 
+    }
+    /* blockquote{
+        margin-left: 4rem;
+        border-left: 3px solid black;
+    }
+    .border{
+        border: 2px solid black;
+    } */
+    .r,.o,.y,.g,.b,.brown,.bg,.lg,.grey,.gold,.v,.p,.i,.bl,.w{
+        border: .5px solid grey;
+        background-color: white;
+        color: black;
+        filter: drop-shadow(rgb(181, 181, 181) .5px .5px .5px);
+    }
+}
